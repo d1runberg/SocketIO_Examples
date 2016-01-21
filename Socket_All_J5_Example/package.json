@@ -1,0 +1,15 @@
+{
+  "name": "my_socket_site",
+  "version": "1.0.0",
+  "description": "example site for using express and socket.io for dynamic data sharing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Derek Runberg",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.3",
+    "socket.io": "^1.3.7"
+  }
+}

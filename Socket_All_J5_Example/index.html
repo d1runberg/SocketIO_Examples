@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>  </head>
+  <body>
+    <script>
+      var socket = io.connect();
+
+      socket.on('date', function(data){
+        $('#date').text(data.date);
+      });
+
+      socket.on('number',function(data){
+        $('#light').text(data.light);
+        $('#sound').text(data.sound);
+        $('#temp').text(data.temp);
+        $('#slider').text(data.slide);
+      });
+    </script>
+    <h2> Date and Time: <h2>
+    <div id="date"></div>
+    <br>
+    <h2><b>Light Value: <b></h2>
+    <div id="light"></div>
+    <h2><b>Microphone Value: <b></h2>
+    <div id="sound"></div>
+    <h2><b>Temperature Value: <b></h2>
+    <div id="temp"></div>
+    <h2><b>Slider Value: <b></h2>
+    <div id="slider"></div>
+
+  </body>
+</html>
