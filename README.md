@@ -1,6 +1,4 @@
-*==TO DO==
-1. Add to the example progression
-2. Add examples of using socket with other APIs
-   a. MapBox
-   b. NPT-Client
-   c. ???
+* To Do
+* 
+1. Add examples for realtime geo location
+2. Add examples for client input to hardware control
